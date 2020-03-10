@@ -46,7 +46,7 @@
         <input v-model="name" type="text" class="table__input table__input-enabled">
       </td>
       <td class="table__td">
-        <input v-model="price" type="number" required min="0" onkeyup="value=value.replace(/^[^\d]+/g,'')" class="table__input table__input-enabled">
+        <input v-model="price" type="number" min="0" onkeyup="value=value.replace(/^[^\d]+/g,'')" class="table__input table__input-enabled">
       </td>
       <td class="table__td">
         <textarea v-model="description" class="table__textarea table__textarea-enabled"></textarea>
@@ -202,5 +202,4 @@ export default {
 .table__arrow {
   float: right;
 }
-
 </style>
