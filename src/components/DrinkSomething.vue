@@ -130,7 +130,6 @@ export default {
       item.isEdit = true;
     },
     saveDrinks(item) {
-      console.log(item)
       if (!Validation.IsNotEmpty(item.name)) {
         alert('Please enter your name.')
       } else if (!Validation.IsPrice(item.price)) {
@@ -203,12 +202,5 @@ export default {
 .table__arrow {
   float: right;
 }
-@media (max-width: 768px) {
-  .table__th {
-    width: 8em;
-  }
-  .table__th--sm {
-    width: 3em;
-  }
-}
+
 </style>
