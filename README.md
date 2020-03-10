@@ -9,5 +9,5 @@
 - Finally, you can delete the order by clicking on the image "X".
 
 	There are a few things to emphasize:
-    When you enter a price, you can only enter a positive number or 0. When the order is saved, the numbers will be converted to legal positive numbers.
-    Also, you must enter a name and price, and if you do not enter a value, you will receive an alert.
+    *   When you enter a price, you can only enter a positive number or 0. When the order is saved, the numbers will be converted to legal positive numbers.
+    *   Also, you must enter a name and price, and if you do not enter a value, you will receive an alert.
