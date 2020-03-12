@@ -10,7 +10,8 @@ For now, you have some features to use
 
 ## How to use
 1. Define your columns
-                {
+```
+		{
                         title: "",
                         default: "",
                         tag: input/ textarea,
@@ -22,8 +23,10 @@ For now, you have some features to use
                                 onkeyup: ""
                         }
                 }
+```
 2. Create your main view.
-```<template>
+``` Vue
+<template>
   <OrderList :columns="columns"></OrderList>
 </template>
 
@@ -39,7 +42,7 @@ export default {
     return {
       columns: [
         {
-          title: "NAME",
+          title: "<yourColumnName>",
           default: "",
           tag: "input",
           sort: true,
