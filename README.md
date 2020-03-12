@@ -11,18 +11,18 @@ For now, you have some features to use
 ## How to use
 1. Define your columns
 ```
-		{
-                        title: "",
-                        default: "",
-                        tag: input/ textarea,
-                        sort: true/ false,
-                        required: true/ false,
-                        options: {
-                                type: text/ number,
-                                sortBy: ASC/ DESC,
-                                onkeyup: ""
-                        }
-                }
+{
+        title: "",
+        default: "",
+        tag: input/ textarea,
+        sort: true/ false,
+        required: true/ false,
+        options: {
+        type: text/ number,
+        sortBy: ASC/ DESC,
+        onkeyup: ""
+        }
+}
 ```
 2. Create your main view.
 ``` Vue
@@ -58,3 +58,7 @@ export default {
 };
 </script>
 ```
+
+## Notes
+For example:
+https://github.com/r03921081/Memo/blob/master/src/components/BuyDrinks/index.vue
