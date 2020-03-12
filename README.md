@@ -1,14 +1,57 @@
-# drinksomething
-- I use the table to implement DrinkSomething.
+# Order Components
+- Provide a components for listing orders.
 
-## Funtions
-The entire function is as follows:
-- First, you can enter a name, price and description.  Then, You can use image + to add an order.  
-- Second, if you click on the pencil image, you can edit the row in the table.  When editing is complete, you can click the check mark image to save the edit.
-- Third, you can click the arrow image to change the order of names or prices.  More specifically, the up arrow represents ASC.
-- Finally, you can delete the order by clicking on the image "X".
+## Basic funtions
+For now, you have some features to use
+1. Two labels can be selected: input, textarea
+2. Sorting columns
+3. Add, edit and delete orders.
+4. Column validation.
 
-## Notes
-There are a few things to emphasize:
-- When you enter a price, you can only enter a positive number or 0.  When the order is saved, the numbers will be converted to legal positive numbers.
-- Also, you must enter a name and price, and if you do not enter a value, you will receive an alert.
+## How to use
+1. Define your columns
+                {
+                        title: "",
+                        default: "",
+                        tag: input/ textarea,
+                        sort: true/ false,
+                        required: true/ false,
+                        options: {
+                                type: text/ number,
+                                sortBy: ASC/ DESC,
+                                onkeyup: ""
+                        }
+                }
+2. Create your main view.
+```<template>
+  <OrderList :columns="columns"></OrderList>
+</template>
+
+<script>
+import OrderList from "../Orders";
+
+export default {
+  name: "<yourName>",
+  components: {
+    OrderList
+  },
+  data() {
+    return {
+      columns: [
+        {
+          title: "NAME",
+          default: "",
+          tag: "input",
+          sort: true,
+          required: true,
+          options: {
+            type: "text",
+            sortBy: "ASC"
+          }
+        }
+      ]
+    };
+  }
+};
+</script>
+```

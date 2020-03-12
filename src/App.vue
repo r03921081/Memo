@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <h1>DrinkSomething</h1>
-    <DrinkSomething />
+    <h1>BuyDrinks</h1>
+    <BuyDrinks />
+    <h1>BuyCar</h1>
+    <BuyCar />
   </div>
 </template>
 
 <script>
-import DrinkSomething from './components/DrinkSomething.vue'
+import BuyDrinks from "./components/BuyDrinks/index.vue";
+import BuyCar from "./components/BuyCar/index.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    DrinkSomething
+    BuyDrinks,
+    BuyCar
   }
-}
+};
 </script>

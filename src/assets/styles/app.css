@@ -1,22 +1,23 @@
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin: 60px 0;
-  }
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin: 60px 0;
+}
   
-  input {
-    background-color: #f7f7f7;
-    border: 1px solid rgb(199, 199, 199);
-    padding: 0.3rem 0.5rem;
-    border-radius: 2px;
-  }
+input {
+  border: 1px solid rgb(199, 199, 199);
+  padding: 0.3rem 0.5rem;
+  border-radius: 2px;
+}
 
-  textarea {
-    background-color: #f7f7f7;
-    border: 1px solid rgb(199, 199, 199);
-    padding: 0.3rem 0.5rem;
-    border-radius: 2px;
-  }
+textarea {
+  border: 1px solid rgb(199, 199, 199);
+  padding: 0.3rem 0.5rem;
+  border-radius: 2px;
+}
+
+h1 {
+  margin: 1rem;
+}

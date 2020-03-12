@@ -1,0 +1,32 @@
+.order {
+  display: -webkit-box;
+  justify-content: start;
+}
+.order__col {
+  text-align: center;
+  width: 16em;
+  margin-bottom: 1em;
+}
+.order__col--sm {
+  text-align: center;
+  width: 3em;
+  margin-bottom: 1em;
+}
+.order__input {
+  width: 90%;
+  height: 2em;
+}
+.order__input-enabled {
+  background-color: white;
+}
+.order__textarea {
+  min-height: 2em;
+  resize: vertical;
+}
+.order__image {
+  cursor: pointer;
+  vertical-align: -webkit-baseline-middle;
+}
+.order__btn {
+  border: 0px;
+}
