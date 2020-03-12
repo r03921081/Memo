@@ -35,7 +35,7 @@ Currently you have some features to use.
 import OrderList from "../Orders";
 
 export default {
-  name: "<yourName>",
+  name: "<YourName>",
   components: {
     OrderList
   },
@@ -43,8 +43,8 @@ export default {
     return {
       columns: [
         {
-          title: "<yourColumnName>",
-          default: "",
+          title: "<YourColumnName>",
+          default: "<InitialValue>",
           tag: "input",
           sort: true,
           required: true,
