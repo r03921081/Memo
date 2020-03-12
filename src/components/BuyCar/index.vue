@@ -82,6 +82,60 @@ export default {
             onkeyup: "value=value.replace(/^[^\\d]+/g,'')",
             sortBy: "ASC"
           }
+        },
+        {
+          title: "HEIGHT",
+          default: "",
+          tag: "input",
+          sort: true,
+          required: true,
+          options: {
+            type: "number",
+            onkeyup: "value=value.replace(/^[^\\d]+/g,'')",
+            sortBy: "ASC"
+          }
+        },
+        {
+          title: "ENGINE TYPE",
+          default: "",
+          tag: "textarea",
+          sort: false,
+          required: false,
+          options: {}
+        },
+        {
+          title: "ENGINE DISPLACEMENT",
+          default: "",
+          tag: "input",
+          sort: true,
+          required: true,
+          options: {
+            type: "number",
+            onkeyup: "value=value.replace(/^[^\\d]+/g,'')",
+            sortBy: "ASC"
+          }
+        },
+        {
+          title: "HORSEPOWER",
+          default: "",
+          tag: "input",
+          sort: true,
+          required: true,
+          options: {
+            type: "text",
+            sortBy: "ASC"
+          }
+        },
+        {
+          title: "TORQUE",
+          default: "",
+          tag: "input",
+          sort: true,
+          required: true,
+          options: {
+            type: "text",
+            sortBy: "ASC"
+          }
         }
       ]
     };
