@@ -1,8 +1,9 @@
 # Order Components
-- Provide a components for listing orders.
+- Vue toy project.
+- Provides components for creating and listing orders.
 
 ## Basic funtions
-For now, you have some features to use
+Currently you have some features to use.
 1. Two labels can be selected: input, textarea
 2. Sorting columns
 3. Add, edit and delete orders.
@@ -60,5 +61,5 @@ export default {
 ```
 
 ## Notes
-For example:
+For example:  
 https://github.com/r03921081/Memo/blob/master/src/components/BuyDrinks/index.vue
