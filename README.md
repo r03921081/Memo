@@ -19,9 +19,9 @@ Currently you have some features to use.
         sort: true/ false,
         required: true/ false,
         options: {
-        type: text/ number,
-        sortBy: ASC/ DESC,
-        onkeyup: ""
+          type: text/ number,
+          sortBy: ASC/ DESC,
+          onkeyup: ""
         }
 }
 ```
