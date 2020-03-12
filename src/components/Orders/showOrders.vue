@@ -1,12 +1,12 @@
 <template>
-  <form @submit="changeDrinks" class="order">
+  <form @submit="changeOrders" class="order">
     <div v-for="(col) in columns" :key="col.title" class="order__col">
       <input
         v-if="col.tag === 'input'"
         v-model="item[col.title]"
         :type="col.options.type"
         :disabled="!item.isEdit"
-        :required="col.required"
+        :required="col.required || false"
         :onkeyup="col.options.onkeyup || null"
         class="order__input"
         :class="{ 'order__input-enabled': item.isEdit }"
@@ -15,7 +15,7 @@
         v-if="col.tag === 'textarea'"
         v-model="item.description"
         :disabled="!item.isEdit"
-        :required="col.required"
+        :required="col.required || false"
         class="order__input order__textarea"
         :class="{ 'order__input-enabled': item.isEdit }"
       ></textarea>
@@ -48,18 +48,18 @@ export default {
     };
   },
   methods: {
-    changeDrinks(e) {
+    changeOrders(e) {
       e.preventDefault();
       if (this.item.isEdit) {
-        this.saveDrinks(this.item);
+        this.saveOrders(this.item);
       } else {
-        this.editDrinks(this.item);
+        this.editOrders(this.item);
       }
     },
-    editDrinks(item) {
+    editOrders(item) {
       item.isEdit = true;
     },
-    saveDrinks(item) {
+    saveOrders(item) {
       item.price = parseInt(item.price, 10);
       item.isEdit = false;
     },
